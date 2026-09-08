@@ -24,8 +24,8 @@ DOCS_DIR = os.path.join(BASE_DIR, 'docs')
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(DOCS_DIR, exist_ok=True)
 
-# 1. Parse bares.md
-source_file = os.path.join(BASE_DIR, 'bares.md')
+# 1. Parse data/bares.md
+source_file = os.path.join(DATA_DIR, 'bares.md')
 with open(source_file, 'r', encoding='utf-8') as f:
     lines = f.readlines()
 
@@ -238,18 +238,4 @@ with open(recorrido_file, 'w', newline='', encoding='utf-8') as f:
     writer.writeheader()
     writer.writerows(itinerary)
 
-# Also keep root copies for quick direct access
-with open(os.path.join(BASE_DIR, 'recorrido_optimo.csv'), 'w', newline='', encoding='utf-8') as f:
-    writer = csv.DictWriter(f, fieldnames=['orden', 'id_original', 'nombre', 'direccion', 'barrio', 'lat', 'lon', 'distancia_tramo_km', 'distancia_acumulada_km'])
-    writer.writeheader()
-    writer.writerows(itinerary)
-
-with open(os.path.join(BASE_DIR, 'bares_geolocalizados.csv'), 'w', newline='', encoding='utf-8') as f:
-    writer = csv.DictWriter(f, fieldnames=['id', 'nombre', 'direccion', 'barrio', 'lat', 'lon', 'source', 'norm'])
-    writer.writeheader()
-    writer.writerows(geocoded_results)
-
-with open(os.path.join(BASE_DIR, 'bares_geolocalizados.geojson'), 'w', encoding='utf-8') as f:
-    json.dump({'type': 'FeatureCollection', 'features': features}, f, ensure_ascii=False, indent=2)
-
-print("Datos y rutas generados correctamente.")
+print("Datos y rutas generados correctamente en data/ y docs/.")

@@ -41,10 +41,13 @@ Este repositorio contiene el flujo completo de datos y visualización:
 ```text
 .
 ├── index.html                   # Aplicación web interactiva (OpenDesign Studio UI)
-├── mapa_bares.html              # Copia de la aplicación web para visualización local
-├── bares.md                     # Listado original de los 90 Bares Notables
+├── README.md                    # Documentación principal del proyecto
+├── LICENSE                      # Licencia MIT
+├── .gitignore                   # Archivos ignorados por Git
+├── .nojekyll                    # Configuración de despliegue para GitHub Pages
 │
 ├── data/                        # Conjuntos de datos estructurados
+│   ├── bares.md                     # Listado fuente de los 90 Bares Notables
 │   ├── bares_geolocalizados.csv     # Bares con latitud, longitud y fuente
 │   ├── bares_geolocalizados.geojson # Archivo GeoJSON estándar para GIS/Mapas
 │   └── recorrido_optimo.csv         # Itinerario secuencial 1-90 con distancias

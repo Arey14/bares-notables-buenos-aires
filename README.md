@@ -1,9 +1,12 @@
 # Bares Notables de Buenos Aires — Geolocalización, Rutas Óptimas y Aplicación Web
 
+[![Live Demo](https://img.shields.io/badge/Demo-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://arey14.github.io/bares-notables-buenos-aires/)
 [![OpenStreetMap](https://img.shields.io/badge/Map-OpenStreetMap-brightgreen.svg)](https://www.openstreetmap.org)
 [![Leaflet](https://img.shields.io/badge/UI-Leaflet.js-green.svg)](https://leafletjs.com)
 [![Python](https://img.shields.io/badge/Engine-Python%203-blue.svg)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> 🚀 **Aplicación en vivo:** [https://arey14.github.io/bares-notables-buenos-aires/](https://arey14.github.io/bares-notables-buenos-aires/)
 
 Proyecto integral de análisis geoespacial, optimización de rutas (TSP) y aplicación web interactiva para los **90 Bares Notables de la Ciudad Autónoma de Buenos Aires (CABA)** declarados patrimonio cultural.
 
